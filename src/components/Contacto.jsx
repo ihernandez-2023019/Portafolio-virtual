@@ -1,31 +1,27 @@
 import React from "react";
-// Para los íconos, usaremos Lucide React.
-// Asegúrate de tener lucide-react instalado: npm install lucide-react
+
 import { Github, Facebook, Instagram, Linkedin } from 'lucide-react'; 
 
 export const Contacto = () => (
-  // Sección principal con fondo oscuro (bg-gray-900), texto blanco y padding responsivo.
+
   <section id="contacto" className="min-h-screen py-16 px-8 md:px-24 lg:px-32 bg-gray-900 text-white font-inter">
-    {/* Contenedor principal para centrar el contenido y limitar su ancho */}
-    <div className="max-w-3xl mx-auto"> {/* Reducido max-w para que el formulario se vea más compacto */}
-      {/* Título principal de la sección: "Vías de contacto" */}
+
+    <div className="max-w-3xl mx-auto">
+
       <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-white">
         Vías de contacto
       </h2>
 
-      {/* Texto descriptivo, centrado y con margen inferior */}
       <p className="text-lg text-center mb-12 leading-relaxed text-gray-300">
         ¿Te interesa saber más sobre mi trabajo o sobre cómo puedo colaborar
         en tu proyecto? <span className="font-bold text-white">Contáctame</span> por cualquiera de las siguientes vías.
       </p>
 
-      {/* Información de contacto (Email y Teléfono) - Estilo simple */}
-      <div className="text-center mb-16"> {/* Margen inferior para separar del formulario */}
+      <div className="text-center mb-16">
         <p className="text-xl mb-2 text-white">el123nachino@gmail.com</p>
         <p className="text-xl text-white">+502 5314-9709</p>
       </div>
 
-      {/* Formulario de Contacto */}
       <form className="w-full">
         <div className="mb-6">
           <input
@@ -33,7 +29,6 @@ export const Contacto = () => (
             id="nombre"
             name="nombre"
             placeholder="Nombre"
-            // Estilo para el tema oscuro: fondo transparente, borde inferior más claro, texto blanco, placeholder gris
             className="w-full py-3 px-0 bg-transparent border-b border-gray-700 focus:outline-none focus:border-yellow-500 text-white placeholder-gray-400"
           />
         </div>
@@ -65,11 +60,9 @@ export const Contacto = () => (
           ></textarea>
         </div>
         
-        {/* Botón Enviar */}
         <div className="text-center">
           <button
             type="submit"
-            // Estilo del botón para el tema oscuro
             className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-12 rounded-lg transition duration-300 shadow-md"
           >
             Enviar
@@ -77,13 +70,11 @@ export const Contacto = () => (
         </div>
       </form>
 
-      {/* Sección de Redes Sociales */}
-      <div className="mt-16 text-center border-t border-gray-700 pt-8"> {/* Línea divisoria y padding superior */}
+      <div className="mt-16 text-center border-t border-gray-700 pt-8">
         <h3 className="text-xl font-bold mb-6 uppercase text-white">
           REDES SOCIALES
         </h3>
         <div className="flex justify-center space-x-6">
-          {/* Enlaces a Redes Sociales con íconos, texto blanco y hover a gris */}
           <a 
             href="https://github.com/ihernandez-2023019" 
             target="_blank" 

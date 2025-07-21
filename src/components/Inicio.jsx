@@ -21,24 +21,19 @@ export const Inicio = () => {
         </button>
       </div>
 
-      {/* Columna derecha (amarilla con imagen) */}
       <div className="bg-yellow-500 flex-1 flex justify-center items-center overflow-hidden">
-        {/* Usamos una imagen de placeholder por ahora. Deberías reemplazar 'your-image-url.png' con la URL de la imagen de Michael. */}
-        {/* Asegúrate de que la imagen tenga un fondo transparente o se integre bien con el amarillo. */}
+
         <img
-          src={Calajo} // Placeholder temporal. Reemplaza esto.
+          src={Calajo}
           alt="Michael - Freelance Web Designer & Developer"
           className="w-md h-md object-cover rounded-lg shadow-md"
-          // Si tu imagen tiene un fondo, podrías necesitar ajustar el estilo para que se vea bien.
-          // Por ejemplo, si la imagen tiene un fondo blanco y quieres que se vea transparente sobre amarillo:
-          // style={{ mixBlendMode: 'multiply' }} o 'screen' dependiendo del efecto deseado.
+
         />
       </div>
 
-      {/* Menú de navegación (parte superior derecha) - Puedes implementarlo como un componente separado */}
       <div className="absolute top-0 right-0 p-8 z-10">
         <button className="text-white md:text-gray-900 text-3xl focus:outline-none">
-          {/* Icono de hamburguesa o similar */}
+
           &#9776;
         </button>
       </div>
