@@ -1,5 +1,5 @@
 import React from "react";
-import Calajo from '../assets/Calajo.jpg'
+import Calajo from '../assets/Profile.jpg'
 import { Link } from "react-router-dom";
 
 export const Inicio = () => {
